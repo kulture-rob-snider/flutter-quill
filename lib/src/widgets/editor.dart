@@ -628,6 +628,9 @@ class _QuillEditorSelectionGestureDetectorBuilder
                 ..selectWordEdge(SelectionChangedCause.tap)
                 ..onSelectionCompleted();
               break;
+            case PointerDeviceKind.trackpad:
+              // TODO: flutter 3.0.0 handle trackpad
+              break;
           }
         } else {
           renderEditor!
